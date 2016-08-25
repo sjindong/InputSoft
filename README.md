@@ -1,0 +1,2 @@
+# InputSoft
+pinyinime
