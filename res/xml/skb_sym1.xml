@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- Copyright (C) 2009 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+--><!--<keyboard
+    balloon="true"
+    height="20%p"
+    key_type="6"
+    repeat="false"
+    skb_cache_flag="true"
+    skb_template="@xml/skb_template1"
+    width="10%p">
+
+    <row>
+        <keys
+            codes="8|9|10|11|12|13|14|15|16|7"
+            labels="1|2|3|4|5|6|7|8|9|0"
+            splitter="|"
+            width="9.9%p" />
+    </row>
+
+    <row
+        start_pos_x="5%p"
+        start_pos_y="20%p">
+        <keys
+            labels="%|*"
+            splitter="|" />
+        <keys
+            labels="\@|#"
+            splitter="|" />
+        <key
+            label="、">
+            <toggle_state
+                label="/"
+                state_id="@string/toggle_en_sym1" />
+        </key>
+        <keys
+            labels="(|)"
+            splitter="|" />
+        <key label="—">
+            <toggle_state
+                label="-"
+                state_id="@string/toggle_en_sym1" />
+        </key>
+        <key
+            icon="@drawable/period_full_popup_icon"
+            icon_popup="@drawable/period_full_popup_icon"
+            label="。">
+            <toggle_state
+                label="."
+                state_id="@string/toggle_en_sym1" />
+        </key>
+    </row>
+
+    <row
+        start_pos_x="8%p"
+        start_pos_y="40%p">
+        <key label="！">
+            <toggle_state
+                label="!"
+                state_id="@string/toggle_en_sym1" />
+        </key>
+        <key label="￥">
+            <toggle_state
+                label="$"
+                state_id="@string/toggle_en_sym1" />
+        </key>
+        <key label="“">
+            <toggle_state
+                label="&quot;"
+                state_id="@string/toggle_en_sym1" />
+        </key>
+        <key label="”">
+            <toggle_state
+                label="'"
+                state_id="@string/toggle_en_sym1" />
+        </key>
+        <key label="：">
+            <toggle_state
+                label=":"
+                state_id="@string/toggle_en_sym1" />
+        </key>
+        <key label="；">
+            <toggle_state
+                label=";"
+                state_id="@string/toggle_en_sym1" />
+        </key>
+        <key label="，">
+            <toggle_state
+                label=","
+                state_id="@string/toggle_en_sym1" />
+        </key>
+        <key label="？">
+            <toggle_state
+                label="\?"
+                state_id="@string/toggle_en_sym1" />
+        </key>
+        <key id="3" />
+    </row>
+
+
+    <row
+        height="15%p"
+        start_pos_x="14%p"
+        start_pos_y="65%p">
+        <key
+            code="-2"
+            key_type="6"
+            label="中 符"
+            repeat="true"
+            start_pos_x="14%p"
+            start_pos_y="65%p"
+            width="16%p">
+            <toggle_state
+                code="-2"
+                label="英 符"
+                state_id="@string/toggle_en_sym1" />
+        </key>
+
+        <key id="5" />
+        <key id="8" />
+        <key id="2" />
+    </row>
+</keyboard>-->
+
+<keyboard
+    balloon="true"
+    height="20%p"
+    key_type="6"
+    repeat="false"
+    skb_cache_flag="true"
+    skb_template="@xml/skb_template1"
+    width="10%p">
+
+    <row>
+        <keys
+            codes="8|9|10|11|12|13|14|15|16|7"
+            labels="1|2|3|4|5|6|7|8|9|0"
+            splitter="|"
+            width="9.9%p"></keys>
+    </row>
+
+    <row
+        start_pos_x="5%p"
+        start_pos_y="20%p">
+
+        <key label="-">
+            <toggle_state
+                label="—"
+                state_id="@string/toggle_en_sym1" />
+        </key>
+        <key label="/">
+            <toggle_state
+                label="、"
+                state_id="@string/toggle_en_sym1" />
+        </key>
+        <key label=":">
+            <toggle_state
+                label="："
+                state_id="@string/toggle_en_sym1" />
+        </key>
+        <key label=";">
+            <toggle_state
+                label="；"
+                state_id="@string/toggle_en_sym1" />
+        </key>
+        <key label="(">
+            <toggle_state
+                label="（"
+                state_id="@string/toggle_en_sym1" />
+        </key>
+        <key label=")">
+            <toggle_state
+                label="）"
+                state_id="@string/toggle_en_sym1" />
+        </key>
+        <key label="$">
+            <toggle_state
+                label="￥"
+                state_id="@string/toggle_en_sym1" />
+        </key>
+        <key label="&amp;">
+            <toggle_state
+                label="“"
+                state_id="@string/toggle_en_sym1" />
+        </key>
+        <key label="\@">
+            <toggle_state
+                label="”"
+                state_id="@string/toggle_en_sym1" />
+        </key>
+    </row>
+
+    <row
+        start_pos_x="8%p"
+        start_pos_y="40%p">
+        <!--<key
+            code="-2"
+            key_type="6"
+            label="中"
+            repeat="true"
+            start_pos_x="14%p"
+            start_pos_y="65%p"
+            width="16%p">
+            <toggle_state
+                code="-2"
+                label="EN"
+                state_id="@string/toggle_en_sym1" />
+        </key>-->
+
+        <key
+            balloon="false"
+            code="-7"
+            key_type="6"
+            label="\#+="
+            start_pos_x="14%p"
+            start_pos_y="65%p"
+            width="16%p"></key>
+
+        <key label=".">
+            <toggle_state
+                label="。"
+                state_id="@string/toggle_en_sym1" />
+            <toggle_state
+                label="。5"
+                state_id="5" />
+            <toggle_state
+                label="。6"
+                state_id="6" />
+        </key>
+        <key label=",">
+            <toggle_state
+                label="，"
+                state_id="@string/toggle_en_sym1" />
+        </key>
+        <key label="\?">
+            <toggle_state
+                label="？"
+                state_id="@string/toggle_en_sym1" />
+        </key>
+        <key label="!">
+            <toggle_state
+                label="！"
+                state_id="@string/toggle_en_sym1" />
+        </key>
+        <key label="'">
+            <toggle_state
+                label="‘"
+                state_id="@string/toggle_en_sym1" />
+        </key>
+        <key label="&quot;">
+            <toggle_state
+                label="’"
+                state_id="@string/toggle_en_sym1" />
+        </key>
+
+        <key
+            balloon="false"
+            id="3" />
+    </row>
+
+
+    <row
+        height="15%p"
+        start_pos_x="18%p"
+        start_pos_y="65%p">
+        <key
+            balloon="false"
+            code="-2"
+            key_type="6"
+            label="@string/text_CN"
+            repeat="true"
+            start_pos_x="18%p"
+            start_pos_y="65%p"
+            width="8%p">
+            <toggle_state
+                code="-2"
+                label="@string/text_EN"
+                state_id="@string/toggle_en_sym1" />
+        </key>
+
+        <key
+            balloon="false"
+            id="5" />
+        <key
+            balloon="false"
+            id="8" />
+        <key
+            balloon="false"
+            id="2" />
+    </row>
+</keyboard>

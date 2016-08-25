@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<keyboard
+    balloon="true"
+    height="20%p"
+    key_type="6"
+    qwerty="true"
+    qwerty_uppercase="true"
+    repeat="false"
+    skb_cache_flag="true"
+    skb_template="@xml/skb_template1"
+    width="10%p">
+
+    <row>
+        <keys
+            codes="45|51|33|46|48|53|49|37|43|44"
+            labels="Q|W|E|R|T|Y|U|I|O|P"
+            splitter="|" />
+    </row>
+    <row start_pos_x="5%p">
+        <keys
+            codes="29|47|32|34|35|36|38|39|40"
+            labels="A|S|D|F|G|H|J|K|L"
+            splitter="|" />
+    </row>
+
+
+    <row start_pos_x="9%p">
+        <key
+            key_type="6"
+            label="，"
+            width="6%p">
+            <toggle_state
+                code="-1"
+                icon="@drawable/shift_off_icon"
+                icon_popup="@drawable/shift_off_popup_icon"
+                label="@string/text_CN"
+                state_id="@string/toggle_en_lower" />
+            <toggle_state
+                code="-1"
+                icon="@drawable/shift_off_popup_icon"
+                icon_popup="@drawable/shift_off_icon"
+                label="@string/text_EN"
+                state_id="@string/toggle_en_upper" />
+        </key>
+
+        <keys
+            codes="54|52|31|50|30|42|41"
+            labels="Z|X|C|V|B|N|M"
+            splitter="|" />
+
+        <key
+            balloon="false"
+            id="3" /> <!-- 删除按钮 -->
+    </row>
+
+    <row>
+        <key
+            balloon="false"
+            id="6" /> <!-- 中英文  切换 -->
+        <key
+            balloon="false"
+            id="4" /> <!-- 数字和输入 切换 -->
+        <key
+            balloon="false"
+            id="8" /> <!-- 空格键 -->
+        <key id="2" />
+    </row>
+
+</keyboard>

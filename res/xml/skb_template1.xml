@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?><!--
+     Copyright (C) 2009 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<skb_template
+    balloon_bg="@drawable/key_balloon_bg2"
+    color="@color/label_color"
+    color_balloon="@color/balloon_color"
+    color_highlight="@color/label_color"
+    key_xmargin="0%p"
+    key_ymargin="0%p"
+    popup_bg="@drawable/miniskb_bg"
+    skb_bg="@drawable/skb_bg">
+
+    <!-- Normal key -->
+    <key_type
+        bg="@drawable/normal_key_bg"
+        color_highlight="@color/label_color_hl0"
+        hlbg="@drawable/normal_key_hl_bg"
+        id="0" />
+
+    <!-- Function key -->
+    <key_type
+        bg="@drawable/normal_key_bg"
+        hlbg="@drawable/normal_key_hl_bg"
+        id="1" />
+
+    <!-- Light key, light is off -->
+    <key_type
+        bg="@drawable/light_key_bg"
+        hlbg="@drawable/light_key_hl_bg"
+        id="2" />
+
+    <!-- Light key, light is on -->
+    <key_type
+        bg="@drawable/light_key_up_bg"
+        hlbg="@drawable/light_key_up_hl_bg"
+        id="3" />
+
+    <!-- key without background -->
+    <key_type id="4" />
+
+    <!-- Key with normal background but on-key high-light -->
+    <key_type
+        bg="@drawable/normal_key_bg"
+        color_highlight="@color/label_color_hl0"
+        hlbg="@drawable/normal_key_hl_bg"
+        id="5" />
+
+    <key_type
+        color_highlight="@color/label_color_hl0"
+        hlbg="@drawable/letter_press"
+        id="6" />
+
+    <!-- Default icons for enter key -->
+    <key_icon
+        code="66"
+        icon="@drawable/enter_icon"
+        icon_popup="@drawable/enter_popup_icon" />
+
+    <!-- Default icons for space key -->
+    <key_icon
+        code="62"
+        icon="@drawable/space_icon"
+        icon_popup="@drawable/space_popup_icon" />
+
+    <!-- Default icons for delete key -->
+    <key_icon
+        code="67"
+        icon="@drawable/delete_icon"
+        icon_popup="@drawable/delete_popup_icon" />
+
+    <!-- Default key definition -->
+    <!-- Enter key for QWERTY-like keyboards. -->
+    <key
+        code="66"
+        height="15%p"
+        id="1"
+        key_type="6"
+        start_pos_x="55%p"
+        start_pos_y="65%p"
+        width="12%p">
+        <toggle_state
+            code="66"
+            label="@string/text_go"
+            state_id="@string/toggle_enter_go" />
+        <toggle_state
+            code="66"
+            icon="@drawable/search_icon"
+            icon_popup="@drawable/search_popup_icon"
+            state_id="@string/toggle_enter_search" />
+        <toggle_state
+            code="66"
+            label="@string/text_send"
+            state_id="@string/toggle_enter_send" />
+        <toggle_state
+            code="66"
+            label="@string/text_next"
+            state_id="@string/toggle_enter_next" />
+        <toggle_state
+            code="66"
+            label="@string/text_finish"
+            state_id="@string/toggle_enter_done" />
+    </key>
+
+    <!-- Enter key for phone keyboard. -->
+    <key
+        balloon="false"
+        code="66"
+        height="15%p"
+        id="2"
+        key_type="6"
+        start_pos_x="66%p"
+        start_pos_y="65%p"
+        width="20%p">
+        <toggle_state
+            code="66"
+            icon="@drawable/back"
+            icon_popup="@drawable/back"
+            state_id="@string/toggle_enter_go" />
+        <!--label="@string/text_go"-->
+        <toggle_state
+            code="66"
+            icon="@drawable/search_icon"
+            icon_popup="@drawable/search_popup_icon"
+            state_id="@string/toggle_enter_search" />
+        <toggle_state
+            code="66"
+            label="@string/text_send"
+            state_id="@string/toggle_enter_send" />
+        <toggle_state
+            code="66"
+            label="@string/text_next"
+            state_id="@string/toggle_enter_next" />
+        <toggle_state
+            code="66"
+            label="@string/text_finish"
+            state_id="@string/toggle_enter_done" />
+    </key>
+
+    <!-- Delete key. -->
+    <key
+        balloon="false"
+        code="67"
+        height="20%p"
+        id="3"
+        key_type="6"
+        repeat="true"
+        start_pos_x="85%p"
+        start_pos_y="40%p"
+        width="8%p" />    <!--删除键-->
+
+    <!-- Symbol-switching key (off-mode). -->
+    <key
+        balloon="false"
+        code="-3"
+        height="15%p"
+        id="4"
+        key_type="6"
+        label="123"
+        start_pos_x="28%p"
+        start_pos_y="65%p"
+        width="16%p"></key>
+
+    <!-- Symbol-switching key (on-mode). -->
+    <key
+        balloon="false"
+        code="-3"
+        height="15%p"
+        id="5"
+        key_type="6"
+        label="ABC"
+        start_pos_x="28%p"
+        start_pos_y="65%p"
+        width="16%p" />
+
+    <!-- Language-switching key. 中英文语言切换 -->
+    <key
+        balloon="false"
+        code="-2"
+        height="15%p"
+        id="6"
+        key_type="6"
+        label="@string/text_EN"
+        repeat="true"
+        start_pos_x="18%p"
+        start_pos_y="65%p"
+        width="8%p">
+        <toggle_state
+            code="-2"
+            label="@string/text_CN"
+            state_id="@string/toggle_en_lower" />
+        <toggle_state
+            code="-2"
+            label="@string/text_CN"
+            state_id="@string/toggle_en_upper" />
+    </key>
+
+    <!-- Period key(English mode).  -->
+    <key
+        height="15%p"
+        icon="@drawable/period_icon"
+        icon_popup="@drawable/period_popup_icon"
+        id="7"
+        key_type="6"
+        label="."
+        start_pos_x="14%p"
+        start_pos_y="65%p"
+        width="16%p" />
+
+    <key
+        balloon="false"
+        code="62"
+        height="15%p"
+        id="8"
+        key_type="6"
+        start_pos_x="46%p"
+        start_pos_y="65%p"
+        width="20%p" /> <!-- 空格键 -->
+</skb_template>

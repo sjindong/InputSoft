@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (C) 2009 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources>
+  <dimen name="candview_background_padding">0dip</dimen>
+  <dimen name="extract_view_height">180dip</dimen>
+  <dimen name="extract_text_heigt">80dip</dimen>
+  <dimen name="extract_text_left_gap">36dip</dimen>
+  <dimen name="baloon_text_gap">36dip</dimen>
+
+<!--Add for wear -->
+
+  <!--header view -->
+   <dimen name="head_view_height">65dp</dimen>
+   <dimen name="title_view_text_size">24dp</dimen>
+   <dimen name="title_view_width">150dp</dimen>
+       
+   <dimen name="space_perference_height_bottom">@dimen/head_view_height</dimen>
+   <dimen name="candi_view_gap">20dp</dimen>
+</resources>
